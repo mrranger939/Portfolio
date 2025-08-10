@@ -1067,14 +1067,14 @@ export default function ProjectTabs({ onClose }) {
       <div className="flex flex-col gap-6">
         <TabsDemo tabs={streaming} />
         <TabsDemo tabs={sudoku} />
-        <TabsDemo tabs={maskDetection} />
+        <TabsDemo tabs={youtubeSum} />
         <TabsDemo tabs={tictactoe} />
-        <TabsDemo tabs={vision} />
-        <TabsDemo tabs={urlShortener} />
+        <TabsDemo tabs={maskDetection} />
         <TabsDemo tabs={WTPAnalysis} />
         <TabsDemo tabs={fashionRecommenderSystem} />
-        <TabsDemo tabs={youtubeSum} />
+        <TabsDemo tabs={urlShortener} />
         <TabsDemo tabs={trustTribe} />
+        <TabsDemo tabs={vision} />
         <TabsDemo tabs={MDPS} />
       </div>
     </div>
