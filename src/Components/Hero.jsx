@@ -16,9 +16,7 @@ export default function Hero() {
             CS Engineer from Hyderabad 🇮🇳 | CBIT '26
           </p>
           <p className="mt-2  max-w-md  md:mx-0">
-            Full-stack developer by skill, ML engineer by passion. I love
-            bringing intelligent and complete applications to life, from concept
-            to deployment.
+            As a Full-Stack Developer and ML Engineer, I don't just build applications, I architect intelligent systems designed to perform, scale, and innovate.
           </p>
           <p className="mt-4 text-sm  max-w-md md:mx-0">
             Have an interesting problem or an opportunity? Let's connect.
