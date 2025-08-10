@@ -30,12 +30,12 @@ export const Timeline = ({
       ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <div className="text-lg md:text-4xl mb-4 font-bold text-white max-w-4xl">
-          Education
+          TimeLine
         </div>
         <p
           className="text-neutral-300 text-sm md:text-base max-w-sm">
           {/* &apos;ve been working on Aceternity for the past 2 years.  */}Here&apos;s
-          a timeline of my student journey.
+          a timeline of my journey.
         </p>
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

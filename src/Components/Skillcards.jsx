@@ -19,6 +19,10 @@ import tailwind from "../assets/tailwind.png"
 import cl from "../assets/c.png"
 import cpp from "../assets/cpp.webp"
 import java from "../assets/java.png"
+import tensorflow from '../assets/tensorflow.png'
+import keras from '../assets/keras.png'
+import kafka from '../assets/kafka.png'
+import docker from '../assets/docker.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 export function CardHoverEffectDemo({onClose}) {
@@ -26,7 +30,7 @@ export function CardHoverEffectDemo({onClose}) {
     (<div className=" px-8 ">
               <button
         onClick={onClose}
-        className="text-neutral-200 text-sm absolute top-0 left-0 right-0 w-fit mx-auto py-2 px-4 bg-transparent rounded-md"
+        className="fixed text-neutral-200 text-sm  top-0 left-0 right-0 w-fit mx-auto py-2 px-4 bg-transparent rounded-md"
       >
         <FontAwesomeIcon icon={faCircleXmark} className="text-3xl hover:text-4xl transition-all duration-100" />
       </button>
@@ -174,35 +178,28 @@ export const projects = [
     link: "https://stripe.com",
     image: cpp,
   },
-
-  /* {
-    title: "Netflix",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
-  },
   {
-    title: "Google",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
-  },
-  {
-    title: "Meta",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
-  },
-  {
-    title: "Amazon",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
-  },
-  {
-    title: "Microsoft",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
-  }, */
+  title: "TensorFlow",
+  description: "...",
+  link: "https://www.tensorflow.org/",
+  image: tensorflow,
+},
+{
+  title: "Keras",
+  description: "...",
+  link: "https://keras.io/",
+  image: keras,
+},
+{
+  title: "Kafka",
+  description: "...",
+  link: "https://kafka.apache.org/",
+  image: kafka,
+},
+{
+  title: "Docker",
+  description: "...",
+  link: "https://www.docker.com/",
+  image: docker,
+},
 ];

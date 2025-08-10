@@ -3,73 +3,67 @@ import { FloatingDock } from "./ui/floating-dock";
 import {
   IconBrandGithub,
   IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconBrandLinkedin,
+  IconMail,
+  IconFileText
 } from "@tabler/icons-react";
+import resume from '../assets/final-1.pdf'
 
 
 export default function FloatingDockDemo() {
   const links = [
     {
-      title: "Home",
+      title: "Resume",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconFileText className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: resume,
     },
     {
-      title: "Components",
+      title: "LinkedIn",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/mohammed-shujath-nawaz/",
     },
     {
-      title: "Aceternity UI",
+      title: "Mail",
       icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo" />
+        <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "mailto:mohammedshujathnawaz@gmail.com"
     },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
+    // {
+    //   title: "Components",
+    //   icon: (
+    //     <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "#",
+    // },
+    // {
+    //   title: "Changelog",
+    //   icon: (
+    //     <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "#",
+    // },
     {
       title: "Twitter",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://x.com/Md_ShujathNawaz",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/mrranger939",
     },
   ];
   return (
-    (<div className="flex items-center justify-center h-[35rem] w-full">
+    (<div className="mt-10 flex justify-center md:justify-start w-full">
       <FloatingDock
         // only for demo, remove for production
         mobileClassName="translate-y-20"

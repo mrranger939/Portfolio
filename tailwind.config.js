@@ -8,7 +8,7 @@ export default {
     "./src/app/**/*.{js,jsx,ts,tsx,mdx}",
     "./src/**/*.{js,jsx,ts,tsx,mdx}",
   ],
-  darkMode: "class",
+  darkMode: ["class"],
   theme: {
     extend: {},
   },
