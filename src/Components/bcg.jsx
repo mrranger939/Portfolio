@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Timeline } from "./ui/timeline";
 import cbit_logo from "../assets/CBIT_LOGO.png";
-import cbit_front from "../assets/cbit_front.jpeg";
+import cbit_front from "../assets/CBIT_front.jpeg";
 import pjc_logo from "../assets/pjc_logo.png";
 import pjc_map from "../assets/pjc_map.png";
 import pv_logo from "../assets/pv_logo.png";
