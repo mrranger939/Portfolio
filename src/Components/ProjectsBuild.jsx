@@ -1,14 +1,16 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+
 import { TabsDemo } from "./projStruct";
 import visionai_1 from "../assets/visionai_1.png";
 import visionai_2 from "../assets/visionai_2.png";
 import sudoku_question from "../assets/Projects/Sudoku/s2.png";
 import sudoku_answer from "../assets/Projects/Sudoku/s1.png";
 import sudoku_load from "../assets/Projects/Sudoku/s3.png";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  IconBrandGithub,
+  IconLink,
+  IconCircleXFilled 
+} from "@tabler/icons-react";
 import tictactoe1 from "../assets/Projects/TicTacToe/tictactoe_1.png";
 import tictactoe2 from "../assets/Projects/TicTacToe/tictactoe_2.png";
 import tictactoe3 from "../assets/Projects/TicTacToe/tictactoe_3.png";
@@ -1060,10 +1062,7 @@ export default function ProjectTabs({ onClose }) {
         onClick={onClose}
         className="text-neutral-200 text-sm absolute top-0 left-0 right-0 w-fit mx-auto py-2 px-4 bg-transparent rounded-md"
       >
-        <FontAwesomeIcon
-          icon={faCircleXmark}
-          className="text-3xl hover:text-4xl transition-all duration-100"
-        />
+        <IconCircleXFilled className="w-9 h-9 hover:scale-110 transition-transform duration-100" />
       </button>
       <div className="flex flex-col gap-6">
         <TabsDemo tabs={streaming} />
@@ -1138,7 +1137,7 @@ const Links = ({ github, live }) => {
             type="button"
             class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2"
           >
-            <FontAwesomeIcon icon={faGithub} className="mr-2" /> GitHub
+            <IconBrandGithub className="mr-2" size={20} /> GitHub
           </button>
         </a>
       )}
@@ -1154,7 +1153,7 @@ const Links = ({ github, live }) => {
             type="button"
             class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2"
           >
-            <FontAwesomeIcon icon={faLink} className="mr-2" /> Live
+            <IconLink className="mr-2" size={20} /> Live
           </button>
         </a>
       )}

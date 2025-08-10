@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Background2 } from "./bcg";
+import { UpperTime } from "./bcg";
 import { motion } from "framer-motion";
-import { CardHoverEffectDemo } from "./Skillcards";
+import { MySkills } from "./Skillcards";
 import ProjectTabs from "./ProjectsBuild";
 import { DotBackgroundDemo } from "./DotBackground";
 import { NavbarDemo } from "./Navbar";
@@ -78,9 +78,8 @@ export default function BackgroundBeamsDemo() {
           transition={{ duration: 0.5 }} // Smooth transition
           className="fixed top-0 left-0 bottom-0 w-full h-full z-50 bg-black overflow-auto" // Fullscreen but transparent
         >
-          {activeComponent === "up" && <Background2 onClose={handleClose} />}
-{/*           {activeComponent === "left" && <BackgroundLeft onClose={handleClose} />} */}
-          {activeComponent === "right" && <CardHoverEffectDemo  onClose={handleClose} />}
+          {activeComponent === "up" && <UpperTime onClose={handleClose} />}
+          {activeComponent === "right" && <MySkills  onClose={handleClose} />}
           {activeComponent === "left" && <ProjectTabs  onClose={handleClose} />}
          {/*  {activeComponent === "down" && <BackgroundDown onClose={handleClose} />} */}
         </motion.div>

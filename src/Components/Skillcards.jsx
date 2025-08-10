@@ -23,16 +23,17 @@ import tensorflow from '../assets/tensorflow.png'
 import keras from '../assets/keras.png'
 import kafka from '../assets/kafka.png'
 import docker from '../assets/docker.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
-export function CardHoverEffectDemo({onClose}) {
+import {
+  IconCircleXFilled  ,
+} from "@tabler/icons-react";
+export function MySkills({onClose}) {
   return (
     (<div className=" px-8 ">
               <button
         onClick={onClose}
         className="fixed text-neutral-200 text-sm  top-0 left-0 right-0 w-fit mx-auto py-2 px-4 bg-transparent rounded-md"
       >
-        <FontAwesomeIcon icon={faCircleXmark} className="text-3xl hover:text-4xl transition-all duration-100" />
+        <IconCircleXFilled className="w-9 h-9 hover:scale-110 transition-transform duration-100" />
       </button>
       <HoverEffect items={projects} />
     </div>)

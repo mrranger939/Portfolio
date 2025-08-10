@@ -7,14 +7,15 @@ import pjc_logo from "../assets/pjc_logo.png";
 import pjc_map from "../assets/pjc_map.png";
 import pv_logo from "../assets/pv_logo.png";
 import pv from "../assets/pv.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  IconCircleXFilled  
+} from "@tabler/icons-react";
 // Placeholders for company logos - you can replace these with your actual imports
 import grapplTech from "../assets/internpixel_logo.jfif";
 import prasunet from "../assets/prasunet_company_logo.jfif";
 import ybi from "../assets/ybi.jfif";
 
-export function Background2({ onClose }) {
+export function UpperTime({ onClose }) {
   const data = [
     // --- Experience Section ---
     {
@@ -223,10 +224,7 @@ export function Background2({ onClose }) {
         onClick={onClose}
         className="text-neutral-200 text-sm absolute top-1 left-0 right-0 w-fit mx-auto py-2 px-4 bg-transparent rounded-md"
       >
-        <FontAwesomeIcon
-          icon={faCircleXmark}
-          className="text-3xl hover:text-4xl transition-all duration-100"
-        />
+        <IconCircleXFilled className="w-9 h-9 hover:scale-110 transition-transform duration-100" />
       </button>
     </>
   );

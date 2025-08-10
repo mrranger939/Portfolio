@@ -33,20 +33,6 @@ export default function FloatingDockDemo() {
       ),
       href: "mailto:mohammedshujathnawaz@gmail.com"
     },
-    // {
-    //   title: "Components",
-    //   icon: (
-    //     <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    //   ),
-    //   href: "#",
-    // },
-    // {
-    //   title: "Changelog",
-    //   icon: (
-    //     <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    //   ),
-    //   href: "#",
-    // },
     {
       title: "Twitter",
       icon: (
