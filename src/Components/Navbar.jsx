@@ -17,17 +17,17 @@ export function NavbarDemo({setActiveComponent}) {
   const navItems = [
     {
       name: "TimeLine",
-      link: "#features",
+      link: "#timeLine",
       direction: 'up'
     },
     {
       name: "Projects",
-      link: "#pricing",
+      link: "#projects",
       direction: 'left'
     },
     {
       name: "Skills",
-      link: "#contact",
+      link: "#skills",
       direction:'right'
     },
   ];
